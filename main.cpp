@@ -16,7 +16,7 @@ int main()
     return 0;
 
 }
-*/
+
 
 //Ejercicio N°2
 
@@ -36,4 +36,57 @@ int main()
     cout << suma(desde, hasta);
 
     return 0;
+
+}
+*/
+
+
+
+//Ejercicio N°7
+
+
+int main()
+{
+
+int vector [POS] = 0, numero;
+    tablaDel(3, vector);
+
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+    cout << "el numero " << numero;
+    if(esPrimo(numero))
+        cout << " es primo." << endl;
+    else
+        cout << " no es primo." << endl;
+
+    return 0;
+
+}
+
+long factorial(int numero)
+{
+    long fact = 1;
+    for(int i = numero; i >= 1; i--)
+        fact = fact * i;
+
+    return fact;
+}
+
+
+bool esPrimo (int numero)
+{
+    bool aux;
+    if(numero <= 1)
+        aux = false;
+    else
+        aux = true;
+
+    for(int i = 2; i < numero; i++)
+    {
+        if((numero % i ) == 0)
+            aux = false;
+    }
+
+    return aux;
+
 }

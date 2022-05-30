@@ -18,6 +18,7 @@ float superficieCirculo(int radio)
 //Ejercicio N°2
 
 long suma (int desde, int hasta)
+
 {
     int i;
     long aux = 0;
@@ -40,10 +41,7 @@ long suma (int desde, int hasta)
 
 
 
-
-
-
-
+//Ejercicio N°7
 
 
 
